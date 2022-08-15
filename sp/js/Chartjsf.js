@@ -15,7 +15,8 @@ const myChart = new Chart(ctx, {
             backgroundColor: [
                 'rgba(0,255,76,0.80)',
 							 ],
-            borderWidth: 1
+            borderWidth: 1,
+			barThickness: 60,
         },
 		{
             label: 'Failed',
@@ -24,7 +25,8 @@ const myChart = new Chart(ctx, {
                 'rgba(255,0,0,0.80)',
                              ],
         
-            borderWidth: 1
+            borderWidth: 1,
+			barThickness: 60,
         },
 				   {
             label: 'Not Attended',
@@ -32,24 +34,25 @@ const myChart = new Chart(ctx, {
             backgroundColor: [
                 'rgba(255,0,0,0.45)',
 							 ],
-            borderWidth: 1
+            borderWidth: 1,
+			barThickness: 60,
         } ],
 		
     },
-  options: {
-	   plugins: {
-		   
-	
-      title: {
-        display: true,
-        text: 'ABP',
+	  
+  options:	{
+	  	   indexAxis: 'y',
+	 	     scales: {
+      x: {
+        stacked: true,
+		display: false,
       },
-	legend: {
-		position: 'bottom',
-		align: 'center'
-		
-	}
-    }
+      y: {
+        stacked: true,
+		display: false,
+      }
+    },
+	   
   }
 	
 	
