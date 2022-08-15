@@ -1,110 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sales Process</title>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sales Process</title>
 
-    <!-- Bootstrap -->
-    <link href="../sp/css/bootstrap-4.4.1.css" rel="stylesheet">
-
-	  	<script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-stacked100@1.0.0"></script>
-   		<script src="js/Chartjsf.js"></script>
-	  
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-       <a class="navbar-brand" href="#">TDC Sales Process Tracker</a>
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon"></span>
-       </button>
-       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-             <li class="nav-item active">
-                <a class="nav-link" href="#">DashBoard <span class="sr-only">(current)</span></a>
-             </li>
-             <li class="nav-item">
-                <a class="nav-link" href="#">Start you learning</a>
-             </li>
-			   <li class="nav-item">
-                <a class="nav-link" href="#">Get Certified</a>
-             </li>
-          </ul>
-         
-       </div>
-    </nav>
-
-    <div class="jumbotron jumbotron-fluid text-center">
-       <h1 class="display-4">SP Certification Program</h1>
-       <p class="lead">Get Certified in your postion Sales process</p>
-       <hr class="my-4">
-       <div class="alert alert-danger" role="alert">
-getting your certificate is a requirement of your role as a Sales profissional. Failing to complete your Certification program might effect your performance evaluation.
-</div>
-		<p ></p>
-       
-          <a class="btn btn-primary btn-lg" href="more.html" role="button">Learn more</a>
-      
-    </div>
-    <div class="container">
-       <hr>
-       <br>
-       
-		<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Aljomaih Bottling Plant - Riyadh</h1>
-    <p class="lead">the <strong>Sales Process</strong> results for ABP:Riyadh Sales forces</p>
-	 <br>
-	  <hr>
-	  <br>
-	  <div class="jumbotron bg-light" >
-  <h1 class="display-4">Overal all status</h1>
-  <p class="lead">below chart represent the current status of certification for ABP <strong>Sales Process</strong> elegible employees</p>
+<!-- Bootstrap -->
+<link href="../sp/css/bootstrap-4.4.1.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-stacked100@1.0.0"></script> 
+<script src="js/Chartjsf.js"></script>
+</head>
+<body>
+	
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <a class="navbar-brand" href="#">TDC Sales Process Tracker</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active"> <a class="nav-link" href="#">DashBoard <span class="sr-only">(current)</span></a> </li>
+      <li class="nav-item"> <a class="nav-link" href="#">Start you learning</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="#">Get Certified</a> </li>
+    </ul>
+  </div>
+</nav>
+	
+	
+<div class="jumbotron jumbotron-fluid text-center ">
+  <h1 class="display-4">SP Certification Program</h1>
+  <p class="lead">Get Certified in your postion Sales process</p>
   <hr class="my-4">
-  <p></p>
-<div class="Container col-12">
-		  <canvas id="ABPchar" style="align-content: center"></canvas>
-		  <script >ABPChart()</script>		  
-		  </div>
+  <div class="container ">
+    <div class="alert alert-danger" role="alert"> getting your certificate is a requirement of your role as a Sales profissional. Failing to complete your Certification program might effect your performance evaluation. </div>
+   
+  </div>
+  <a class="btn btn-primary btn-lg" href="more.html" role="button">Learn more</a> </div>
+<div class="container">
+  <hr>
+  <br>
+  <div class="jumbotron  ">
+    <div class="container">
+      <h1 class="display-4">Aljomaih Bottling Plant - Riyadh</h1>
+      <p class="lead">the <strong>Sales Process</strong> results for ABP:Riyadh Sales forces</p>
+      <br>
+      <hr>
+      <br>
+		<div class="flex-row">
+      <div class="jumbotron bg-light " >
+        <h1 class="display-4">Overal all status</h1>
+        <p class="lead">below chart represent the current status of certification for ABP <strong>Sales Process</strong> elegible employees</p>
+        <hr class="my-4">
+        <p></p>
+        <div class="Container ">
+          <canvas id="ABPchar" style="align-content: center"></canvas>
+          <script >ABPChart()</script> 
+        </div>
 		  
-		  
-		  
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-</div>
+      </div>
+		
+			</div>
+		
+    </div>
+  </div>
+  <br>
+  
+	
+	
+	<hr>
+  
+	
+	
+	<div class="row">
+    <div class="text-center col-lg-6 offset-lg-3">
+      <h4>Learning And Devolpment Center </h4>
+      <p>Copyright &copy; 2022 &middot; All Rights Reserved &middot; <a href="#" >TDC</a></p>
+    </div>
   </div>
 </div>
-    
-
-		
-		
-
-		
-       <br>
-       <hr>
-       <div class="row">
-          <div class="text-center col-lg-6 offset-lg-3">
-             <h4>Footer </h4>
-             <p>Copyright &copy; 2021 &middot; All Rights Reserved &middot; <a href="#" >My Website</a></p>
-          </div>
-       </div>
-    </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-    <script src="../sp/js/jquery-3.4.1.min.js"></script>
-
-    <!-- Include all compiled plugins (below), or include individual files as needed --> 
-    <script src="../sp/js/popper.min.js"></script>
-    <script src="../sp/js/bootstrap-4.4.1.js"></script>
-	 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-stacked100@1.0.0"></script> 
 	
-  </body>
+	
+	
+	
+	
+	
+	
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="../sp/js/jquery-3.4.1.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="../sp/js/popper.min.js"></script> 
+<script src="../sp/js/bootstrap-4.4.1.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-stacked100@1.0.0"></script>
+</body>
 </html>
-
-
-
-
-
-
-
-
