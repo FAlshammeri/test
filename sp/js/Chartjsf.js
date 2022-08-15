@@ -8,10 +8,11 @@ const myChart = new Chart(ctx, {
 
     type: 'bar',
     data: {
-        labels: ['Certified'],
+        labels: ['Global','ABP','Qassim','ABC'],
         datasets: [{
             label: 'Certified',
-            data: [391],
+            data: [791,391,187,213],
+			
             backgroundColor: [
                 'rgba(0,255,76,0.80)',
 							 ],
@@ -20,7 +21,7 @@ const myChart = new Chart(ctx, {
         },
 		{
             label: 'Failed',
-            data: [11],
+            data: [46,11,20,15],
             backgroundColor: [
                 'rgba(255,0,0,0.80)',
                              ],
@@ -30,7 +31,7 @@ const myChart = new Chart(ctx, {
         },
 				   {
             label: 'Not Attended',
-            data: [99],
+            data: [265,99,77,89],
             backgroundColor: [
                 'rgba(255,0,0,0.45)',
 							 ],
@@ -41,7 +42,13 @@ const myChart = new Chart(ctx, {
     },
 	  
   options:	{
-	  	   indexAxis: 'y',
+	  plugins: {
+            legend: {
+                display: false,
+			}
+	  },
+  	   indexAxis: 'y',
+	   responsive: true,
 	 	     scales: {
       x: {
         stacked: true,
@@ -49,7 +56,7 @@ const myChart = new Chart(ctx, {
       },
       y: {
         stacked: true,
-		display: false,
+		display: true,
       }
     },
 	   
