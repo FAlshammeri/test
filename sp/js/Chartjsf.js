@@ -1,7 +1,19 @@
+const passedoverall = [791,391,187,213];
+const NotAttendoverall = [265,99,77,89];
+const Failedoverall = [46,11,20,15];
+const passedposition = [21,175,279,9,225,59,23];
+const Notattendposition = [14,85,61,2,95,8,0];
+const Failedposition = [0,6,1,4,21,14,0];
+
+
 
 function ABPChart () {
 
 
+
+
+	
+	
 const ctx = document.getElementById('ABPchar').getContext('2d');
 
 const myChart = new Chart(ctx, {
@@ -11,7 +23,8 @@ const myChart = new Chart(ctx, {
         labels: ['Global','ABP','Qassim','ABC'],
         datasets: [{
             label: 'Certified',
-            data: [791,391,187,213],
+            //data: [791,391,187,213],
+			data: passedoverall,
 			
             backgroundColor: [
                 'rgba(0,255,76,0.80)',
@@ -21,7 +34,7 @@ const myChart = new Chart(ctx, {
         },
 		{
             label: 'Failed',
-            data: [46,11,20,15],
+            data: Failedoverall,
             backgroundColor: [
                 'rgba(255,0,0,0.80)',
                              ],
@@ -31,7 +44,7 @@ const myChart = new Chart(ctx, {
         },
 				   {
             label: 'Not Attended',
-            data: [265,99,77,89],
+            data: NotAttendoverall,
             backgroundColor: [
                 'rgba(255,0,0,0.45)',
 							 ],
@@ -81,7 +94,7 @@ const myChart = new Chart(ctx, {
         labels: ['CR','Helpers','Merchandiser','MS','Preseller','TDS','UM'],
         datasets: [{
             label: 'Certified',
-            data: [21,175,279,9,225,59,23],
+            data: passedposition,
 			
             backgroundColor: [
                 'rgba(0,255,76,0.80)',
@@ -91,7 +104,7 @@ const myChart = new Chart(ctx, {
         },
 		{
             label: 'Failed',
-            data: [0,6,1,4,21,14,0],
+            data: Failedposition,
             backgroundColor: [
                 'rgba(255,0,0,0.80)',
                              ],
@@ -101,7 +114,7 @@ const myChart = new Chart(ctx, {
         },
 				   {
             label: 'Not Attended',
-            data: [14,85,61,2,95,8,0],
+            data: Notattendposition,
             backgroundColor: [
                 'rgba(255,0,0,0.45)',
 							 ],
