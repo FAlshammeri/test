@@ -4,6 +4,11 @@ const Failedoverall = [46,11,20,15];
 const passedposition = [21,175,279,9,225,59,23];
 const Notattendposition = [14,85,61,2,95,8,0];
 const Failedposition = [0,6,1,4,21,14,0];
+const passedGrade=[174,0,275,2,32,177,42,62,7,19,1];
+const FailedGrade=[6,0,2,0,3,8,14,13,0,0,0];
+const NotattendGrade=[85,1,61,7,14,31,61,5,0,0,0];
+
+
 
 
 
@@ -162,10 +167,10 @@ const myChart = new Chart(ctx, {
 
     type: 'bar',
     data: {
-        labels: ['CR','Helpers','Merchandiser','MS','Preseller','TDS','UM'],
+        labels: [5,6,8,9,10,11,12,13,14,15,16],
         datasets: [{
             label: 'Certified',
-            data: passedposition,
+            data: passedGrade,
 			
             backgroundColor: [
                 'rgba(0,255,76,0.80)',
@@ -177,7 +182,7 @@ const myChart = new Chart(ctx, {
         },
 		{
             label: 'Failed',
-            data: Failedposition,
+            data: FailedGrade,
             backgroundColor: [
                 'rgba(255,0,0,0.80)',
                              ],
@@ -189,7 +194,7 @@ const myChart = new Chart(ctx, {
         },
 				   {
             label: 'Not Attended',
-            data: Notattendposition,
+            data: NotattendGrade,
             backgroundColor: [
                 'rgba(255,0,0,0.45)',
 							 ],
@@ -213,11 +218,11 @@ const myChart = new Chart(ctx, {
 	 	     scales: {
       x: {
         stacked: true,
-		display: false,
+		display: true,
       },
       y: {
         stacked: true,
-		display: true,
+		display: false,
       }
     },
 	   
