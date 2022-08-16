@@ -82,10 +82,10 @@ const myChart = new Chart(ctx, {
 
 
 
-function HitChart () {
+function PosChart () {
 
 
-const ctx = document.getElementById('HitChar').getContext('2d');
+const ctx = document.getElementById('PosChar').getContext('2d');
 
 const myChart = new Chart(ctx, {
 
@@ -147,4 +147,90 @@ const myChart = new Chart(ctx, {
 	
 	
 });
-}// JavaScript Document
+	
+	
+
+}
+
+
+function GradeChart () {
+
+
+const ctx = document.getElementById('GradeChar').getContext('2d');
+
+const myChart = new Chart(ctx, {
+
+    type: 'bar',
+    data: {
+        labels: ['CR','Helpers','Merchandiser','MS','Preseller','TDS','UM'],
+        datasets: [{
+            label: 'Certified',
+            data: passedposition,
+			
+            backgroundColor: [
+                'rgba(0,255,76,0.80)',
+							 ],
+            borderWidth: 0,
+			categoryPercentage: 1.0,
+			barPercentage: 1.0
+		//	barThickness: 60,
+        },
+		{
+            label: 'Failed',
+            data: Failedposition,
+            backgroundColor: [
+                'rgba(255,0,0,0.80)',
+                             ],
+        
+            borderWidth: 0,
+			categoryPercentage: 1.0,
+			barPercentage: 1.0
+	//		barThickness: 60,
+        },
+				   {
+            label: 'Not Attended',
+            data: Notattendposition,
+            backgroundColor: [
+                'rgba(255,0,0,0.45)',
+							 ],
+            borderWidth: 0,
+			categoryPercentage: 1.0,
+			barPercentage: 1.0
+	//		barThickness: 60,
+        } ],
+		
+    },
+	  
+  options:	{
+	 
+	  plugins: {
+            legend: {
+                display: false,
+			}
+	  },
+  	   
+	   responsive: true,
+	 	     scales: {
+      x: {
+        stacked: true,
+		display: false,
+      },
+      y: {
+        stacked: true,
+		display: true,
+      }
+    },
+	   
+  }
+	
+	
+});
+	
+	
+
+}
+
+
+
+
+// JavaScript Document
