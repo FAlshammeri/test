@@ -1,0 +1,33 @@
+from pygooglenews import GoogleNews
+import pandas as pd
+gn = GoogleNews(lang = 'ar', country = 'sa')
+
+
+def get_titles(search):
+    articles = []
+    newsitems= []
+    #newsitems = {
+    #newsitems = gn.topic_headlines('business'),
+    #gn.geo_headlines('SA%3Aar')
+    #}
+
+    newsitems = gn.search(search+'inurl:?hl=ar&gl=SA',when= '6m',)
+    newsitem = newsitems['entries']
+    
+    for item in newsitem:
+        article = {
+            'title':item.title,
+            'link': item.link,
+            'Puplished': item.published
+                      
+        }
+        articles.append(article)
+    return articles
+
+df = pd.DataFrame(get_titles('مال واعمال or بنك or بنوك and السعودية '))
+#df = pd.DataFrame(get_titles('"مال واعمال السعوديه" or بنوك or بنك'))
+
+print(df)
+
+
+
