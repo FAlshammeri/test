@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sales Process</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-stacked100@1.0.0"></script> 
+<script src="js/Chartjsf.js"></script>
+</head>
+<body>
+	
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary"> 
+	
+	<a class="navbar-brand" href="#">TDC Sales Process Tracker</a>
+	<img src="sp/images/TDC-logo3.png"  height="30" class="d-inline-block align-top" alt="">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active"> <a class="nav-link" href="#">DashBoard <span class="sr-only">(current)</span></a> </li>
+      <li class="nav-item"> <a class="nav-link" href="https://rise.articulate.com/share/lJPwQ7D_6zXVAGsMk0zE5pvYH2SALhnM%23/#/">Start you learning</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="https://aljomaih-learning.com/SPA/SPMain.html">Get Certified</a> </li>
+  	  <li class="nav-item"> <a class="nav-link" href="https://aljomaih-learning.com/SPA/results/main.html">Results</a> </li>	
+    </ul>
+  </div>
+</nav>
+	
+	
+<div class="jumbotron jumbotron-fluid text-center ">
+  <h1 class="display-4">SP Certification Program</h1>
+  <p class="lead">Get Certified in your postion Sales process</p>
+  <hr class="my-4">
+  <div class="container ">
+    <div class="alert alert-danger" role="alert"> getting your certificate is a requirement of your role as a Sales profissional. Failing to complete your Certification program might effect your performance evaluation. </div>
+   
+  </div>
+  <a class="btn btn-primary btn-lg" href="sp/more.html" role="button">Learn more</a> </div>
+<div class="container">
+  <hr>
+  <br>
+  <div class="jumbotron  ">
+    <div class="container">
+      <h1 class="display-4">SP DashBoard</h1>
+      <p class="lead">the <strong>Sales Process</strong> results.</p>
+      <br>
+      <hr>
+      <br>
+		<div class="flex-row">
+      <div class="jumbotron bg-light " >
+        <h1 class="display-4">Overal all status</h1>
+        <p class="lead">below chart represent the current status of certification for ABP <strong>Sales Process</strong> elegible employees</p>
+        <hr class="my-4">
+        <p></p>
+        <div class="Container ">
+          <canvas id="ABPchar" style="align-content: center"></canvas>
+          <script >ABPChart()</script> 
+        </div>
+		  
+      </div>
+		
+			</div>
+		
+    </div>
+  </div>
+  <br>
+ </div> 
+	
+	<div class="jumbotron ">
+  <div class="container">
+	 <div class="jumbotron bg-light " >
+    <h1 class="display-4">Positions Status</h1>
+    <p class="lead">Join the Certified <strong>Sales Process</strong> Team</p>
+	  <div class="Container ">
+	  <canvas id="PosChar" style="align-content: center; min-height: 40"></canvas>
+          <script >PosChart()</script> 
+	  </div>
+	  </div>
+  </div>
+</div>
+	
+ 	<div class="jumbotron ">
+  <div class="container">
+	 <div class="jumbotron bg-light " >
+    <h1 class="display-4">Grade Status</h1>
+    <p class="lead">Join the Certified <strong>Sales Process</strong> Team</p>
+	  <div class="Container ">
+	 <canvas id="GradeChar" style="align-content: center; min-height: 40"></canvas>
+          <script >GradeChart()</script>
+	  </div>
+	  </div>
+  </div>
+</div>
+	
+	
+	<div class="jumbotron ">
+  <div class="container">
+	 <div class="jumbotron bg-light " >
+    <h1 class="display-4">Administrative Resources</h1>
+    <p class="lead">Join the Certified <strong>Sales Process</strong> Team</p>
+	  <div class="Container ">
+			<div class="card-deck">
+  <div class="card">
+	  <img src="sp/images/TDC-logo3.png" style="height: 53px; width: 47px" class="card-img-top" alt="TDC">
+    <div class="card-body">
+      <h5 class="card-title">Global</h5>
+      <p class="card-text">download the latest SP results for <strong>all Companies</strong>.</p>
+		<a class="btn btn-primary btn-lg" href="sp/Resources/Global.xlsx" role="button">Download</a>
+    </div>
+    <div class="card-footer"> <small class="text-muted"></small> </div>
+  </div>
+
+				<div class="card">
+	  <img src="sp/images/TDC-logo3.png" style="height: 53px; width: 47px" class="card-img-top" alt="TDC">
+    <div class="card-body">
+      <h5 class="card-title">ABP</h5>
+      <p class="card-text">download the latest SP results for <strong>ABP Riyadh</strong></p>
+		
+		<a class="btn btn-primary btn-lg" href="sp/Resources/ABPRiyadh.xlsx" role="button">Download</a>
+    </div>
+    <div class="card-footer"> <small class="text-muted"></small> </div>
+  </div>
+
+				<div class="card">
+	  <img src="sp/images/TDC-logo3.png" style="height: 53px; width: 47px" class="card-img-top" alt="TDC">
+    <div class="card-body">
+      <h5 class="card-title">ABP</h5>
+      <p class="card-text">download the latest SP results for <strong>ABP Qassim</strong></p>
+		<a class="btn btn-primary btn-lg" href="sp/Resources/ABPQassim.xlsx" role="button">Download</a>
+    </div>
+    <div class="card-footer"> <small class="text-muted"></small> </div>
+  </div>			
+				
+	<div class="card">
+	  <img src="sp/images/TDC-logo3.png" style="height: 53px; width: 47px" class="card-img-top" alt="TDC">
+    <div class="card-body">
+      <h5 class="card-title">ABC</h5>
+      <p class="card-text">download the latest SP results for <strong>ABC</strong></p>
+		<a class="btn btn-primary btn-lg" href="sp/Resources/ABC.xlsx" role="button">Download</a>
+    </div>
+    <div class="card-footer"> <small class="text-muted"></small> </div>
+  </div>			
+				
+		
+</div>
+	  </div>
+	  </div>
+  </div>
+</div>
+	
+	<hr>
+	<div class="row">
+    <div class="text-center col-lg-6 offset-lg-3">
+      <h4>Learning And Devolpment Center </h4>
+      <p>Copyright &copy; 2022 &middot; All Rights Reserved &middot; <a href="#" >TDC</a></p>
+    </div>
+  </div>
+
+	
+
+	
+	
+	
+	
+	
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.4.1.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.4.1.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-stacked100@1.0.0"></script>
+</body>
+</html>
